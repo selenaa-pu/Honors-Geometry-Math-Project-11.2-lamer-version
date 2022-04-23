@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Warm-Up</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Akshar:wght@300&family=Rubik:wght@300&display=swap');
+    </style>
+</head>
+<body>
+
+   <div id="sidenav">
+       <nav>
+           <ul>
+               <li style="margin-top:80px;"><a href="home.html">Home</a></li>
+               <li><a href="lesson.html">Lesson</a></li>
+               <li><a href="homework.html">Homework</a></li>
+               <li><a href="https://docs.google.com/presentation/d/1AVPQ7B4PFokIDsV73AGiM-7OmI8xwUC00mEwKP8ORW4/edit?usp=sharing">Slideshow</a></li>
+           </ul>
+       </nav>
+   </div>
+   <div id="menu-btn">
+        <img src="menu.png" id="menu">
+   </div>
+
+   <script>
+       var menuBtn = document.getElementById("menu-btn")
+       var sidenav = document.getElementById("sidenav")
+       var menu = document.getElementById("menu")
+
+       sidenav.style.right = "-250px";
+
+       menuBtn.onclick = function(){
+           if(sidenav.style.right == "-250px"){
+                sidenav.style.right = "0";
+                menu.src = "close.png";
+           }
+           else{
+               sidenav.style.right = "-250px";
+               menu.src = "menu.png";
+           }
+       }
+   </script>
+
+    <h1>Warm-Up</h1>
+    <h2>Heading 2</h2>
+    <h3>Heading 3</h3>
+    <p>text</p>
+
+</body>
+</html>
