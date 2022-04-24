@@ -1,16 +1,30 @@
 @import url("reset.css");
 
+/* regular pages */
 body{
     background-color: rgb(246, 248, 254);
     font-family: 'Rubik', sans-serif;
     margin: 20px;
-    padding: 0px;
 }
 
 h1{
     font-family: 'Akshar', sans-serif;
+    font-size: 70px;
+    margin-top: 70px;
+    text-align: center;
 }
+h2{
+    color: rgb(0, 85, 128);
+    font-family: 'Akshar', sans-serif;
+    font-size: 35px;
+}
+.header p{
+    font-size: 16px;
+    text-align: center;
+}
+/* regular pages */
 
+/* homepage */
 .home h1{
     font-family: 'Akshar', sans-serif;
     text-align: center;
@@ -20,12 +34,14 @@ h1{
 .home p{
     font-family: 'Rubik', sans-serif;
     text-align: center;
+    font-size: 18px;
 }
 .home h2{
     font-family: 'Akshar', sans-serif;
     text-align: center;
     margin-top: 10%;
     color: rgb(0, 85, 128);
+    font-size: 30px;
 }
 .homepage-btn{
     margin-left: 20%;
@@ -63,7 +79,16 @@ h1{
 .homepage-btn a:hover span{
     width: 100%;
 }
+.active{
+    color: rgb(0, 32, 48);
+    font-weight: bold;
+}
+a:hover{
+    color: rgb(182, 210, 224);
+}
+/* homepage */
 
+/* side navigation bar */
 #sidenav{
     width: 250px;
     height: 100%;
@@ -76,7 +101,10 @@ h1{
 }
 nav ul li{
     list-style: none;
-    margin: 50px 20px;
+    margin-left: 20px;
+    margin-right: 0;
+    margin-bottom: 5px;
+    margin-top: 60px;
     font-size: 22px;
 }
 nav ul li a{
@@ -91,7 +119,7 @@ nav ul li a{
     position: fixed;
     right: 30px;
     top: 20px;
-    border-radius: 3px;
+    border-radius: 5px;
     z-index: 3;
     cursor: pointer;
 
@@ -100,3 +128,4 @@ nav ul li a{
     width: 20px;
     margin-top: 15px;
 }
+/* side navigation bar */
